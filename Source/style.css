@@ -1,0 +1,150 @@
+/*
+This site is created for IE course mid-term exam
+author: Mohammadreza Dorudian    ID: 9731018
+Teacher: Mr. Parham Alvani
+CSS Section
+*/
+
+/* Importing desired font from google-font*/
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+/*============================ Tags ===========================*/
+/* Setting the html tag covering the whole browser page, also using flex as display */
+html {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: "Zilla Slab", serif;
+}
+
+/* Setting the body to cover the whole page, adding background image and delete the redundant margin */
+body {
+    background: url("assets/images/wall.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Customize Header3 for our purpose */
+h3 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+/* Reducing the male/female icon size here */
+img {
+    height: 8%;
+    width: 8%;
+}
+
+/*============================ Center Form ===========================*/
+/* A wrapper container, with it's help we can set the main element in the center of page */
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Set a rectangle to the center of the page using flex and a background color having rgba */
+div.main {
+    background-color: #f0f0ffaf;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+/* Top part of the centered rectangle containing: 1.Form  2.Prediction */
+div.top {
+    display: flex;
+    flex-direction: row;
+}
+
+/* In the top div, it's the left part that contains the Form */
+div.left {
+    display: flex;
+    width: 60%;
+    padding-right: 10px;
+}
+
+/* The main and only Form element that we get input from the user */
+form.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* In the top div, it's the right part that contains the Prediction */
+div.right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 10px;
+}
+
+/*
+Bottom part of the centered rectangle containing: Saving section
+Draw a border as mentioned in the exam question
+*/
+div.down {
+    display: flex;
+    flex-direction: column;
+    border: black thin solid;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    background-color: #efefef;
+}
+
+/*============================ Others ===========================*/
+/* Setting the font size, padding, margin and ... for the input and all the button */
+.submit, button {
+    border-radius: 20px;
+    color: black;
+    background: #f7457a;
+    padding: 6px 20px 6px 20px;
+    text-decoration: none;
+    border: none;
+    width: 80px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* Setting a hover for our buttons for better UX */
+.button:hover {
+    background: #f71155;
+    color: white;
+}
+
+/* The section that user type his name */
+.enter-name {
+    border-radius: 20px;
+    border: none;
+    cursor: text;
+}
+
+/* Set the cursor format when it's inside the radio-buttons */
+input.radio {
+    cursor: pointer;
+}
+
+/* Setting red color for notification element */
+.notif {
+    color: red;
+}
+
+/* An extra element, for showing to the user for example when the input name is incorrect */
+.invalid {
+    display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Genderizer</title>
+    <link rel="stylesheet" href="Source/style.css">
+    <link rel="icon" type="/image/png" href="Source/assets/images/favicon.png">
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="top">
+            <div class="left">
+                <form action="" class="main-form">
+                    <div class="form-text">
+                        <h3>Mr. or Ms. ?</h3>
+                        <label for="name">Name:</label>
+                        <input class="enter-name" id="name" type="text" name="name" placeholder="Enter a name">
+                    </div>
+                    <div class="form-radio" style="margin-top: 16px;">
+                        <div class="gender">
+                            <input class="radio" type="radio" name="gender" value="male" id="male">
+                            <img src="Source/assets/images/male.png" alt="male-icon">
+                        </div>
+                        <div class="gender">
+                            <input class="radio" type="radio" name="gender" value="female" id="female">
+                            <img src="Source/assets/images/female.png" alt="female-icon">
+                        </div>
+                    </div>
+                    <Button class="button submit">submit</Button>
+                    <small class="notif invalid">Please enter a valid name</small>
+                    <Button class="button save">Save</Button>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Prediction</h3>
+                <span class="predict"></span>
+            </div>
+        </div>
+        <div class="down">
+            <h3 class="get-gender" style="text-align: center; font-size: 18px;"></h3>
+            <button class="button reset" style="margin: 0 auto 0 auto;">Clear</button>
+        </div>
+    </div>
+</div>
+<script src="Source/index.js"></script>
+</body>
+</html>
