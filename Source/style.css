@@ -19,7 +19,7 @@ html {
 
 /* Setting the body to cover the whole page, adding background image and delete the redundant margin */
 body {
-    background: url("assets/images/wall.jpg") no-repeat center center fixed;
+    background: url("assets/wall.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
