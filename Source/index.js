@@ -51,7 +51,9 @@ reset.addEventListener("click", () => {
 const getName = async () => {
     const response = await fetch(
         `https://api.genderize.io/?name=${form.name.value}`
-    );
+    ).catch(err => {
+        predict.innerText = "Network Error";
+    });
     const data = await response.json();
     if (data.gender === "male") {
         male.checked = true;
